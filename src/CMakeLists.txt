@@ -3,6 +3,10 @@ add_executable(deepThonk3d_app
     main.cpp
     resources.qrc
 
+    # Core
+    core/rogerian/Engine.h
+    core/rogerian/Engine.cpp
+
     # UI
     ui/bridge/Bridge.h
     ui/bridge/Bridge.cpp

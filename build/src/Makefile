@@ -158,6 +158,30 @@ deepThonk3d_app_autogen/fast:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen.dir/build
 .PHONY : deepThonk3d_app_autogen/fast
 
+core/rogerian/Engine.o: core/rogerian/Engine.cpp.o
+.PHONY : core/rogerian/Engine.o
+
+# target to build an object file
+core/rogerian/Engine.cpp.o:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o
+.PHONY : core/rogerian/Engine.cpp.o
+
+core/rogerian/Engine.i: core/rogerian/Engine.cpp.i
+.PHONY : core/rogerian/Engine.i
+
+# target to preprocess a source file
+core/rogerian/Engine.cpp.i:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.i
+.PHONY : core/rogerian/Engine.cpp.i
+
+core/rogerian/Engine.s: core/rogerian/Engine.cpp.s
+.PHONY : core/rogerian/Engine.s
+
+# target to generate assembly for a file
+core/rogerian/Engine.cpp.s:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.s
+.PHONY : core/rogerian/Engine.cpp.s
+
 deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o: deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
 .PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o
 
@@ -265,6 +289,9 @@ help:
 	@echo "... deepThonk3d_app_autogen"
 	@echo "... deepThonk3d_app_autogen_timestamp_deps"
 	@echo "... deepThonk3d_app"
+	@echo "... core/rogerian/Engine.o"
+	@echo "... core/rogerian/Engine.i"
+	@echo "... core/rogerian/Engine.s"
 	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o"
 	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.i"
 	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.s"

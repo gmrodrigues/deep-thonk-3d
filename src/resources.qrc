@@ -1,5 +1,7 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource prefix="/">
     <file>ui/qml/Main.qml</file>
+    <file>../resources/rules/en-US.json</file>
+    <file>../resources/rules/pt-BR.json</file>
 </qresource>
 </RCC>

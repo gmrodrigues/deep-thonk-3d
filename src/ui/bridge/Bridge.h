@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QAbstractItemModel>
+#include "../../core/rogerian/Engine.h"
 
 class Bridge : public QObject
 {
@@ -23,6 +24,7 @@ signals:
 
 private:
     QAbstractItemModel* m_ruleModel;
+    deep_thonk::Engine m_engine;
 };
 
 #endif //DEEPTHONK3D_BRIDGE_H

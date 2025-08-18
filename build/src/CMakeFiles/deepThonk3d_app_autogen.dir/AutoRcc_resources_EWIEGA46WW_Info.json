@@ -8,7 +8,9 @@
 	"INCLUDE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/include",
 	"INPUTS" : 
 	[
-		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml"
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml",
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/resources/rules/pt-BR.json",
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/resources/rules/en-US.json"
 	],
 	"LOCK_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

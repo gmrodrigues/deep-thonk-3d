@@ -1,5 +1,7 @@
 /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/KZSOAEDHIY/moc_Bridge.cpp: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.h \
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/moc_predefs.h \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.h \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Rules.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -150,6 +152,7 @@
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
+  /usr/include/c++/13/regex \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \

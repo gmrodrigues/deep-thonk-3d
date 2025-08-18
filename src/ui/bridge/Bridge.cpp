@@ -1,9 +1,29 @@
 #include "Bridge.h"
 #include <QDebug>
+#include <QFile>
+#include <QTextStream>
 
 Bridge::Bridge(QObject *parent) : QObject(parent), m_ruleModel(nullptr)
 {
-    // TODO: Initialize rule model
+    // Load rule files from resources
+    QFile enFile(":/resources/rules/en-US.json");
+    if (enFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&enFile);
+        std::string content = in.readAll().toStdString();
+        m_engine.loadRulesFromString(content);
+        enFile.close();
+    }
+
+    QFile ptFile(":/resources/rules/pt-BR.json");
+    if (ptFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        QTextStream in(&ptFile);
+        std::string content = in.readAll().toStdString();
+        m_engine.loadRulesFromString(content);
+        ptFile.close();
+    }
+
+    // Set default locale
+    setLocale("en-US");
 }
 
 QAbstractItemModel* Bridge::ruleModel() const
@@ -14,13 +34,12 @@ QAbstractItemModel* Bridge::ruleModel() const
 void Bridge::submitMessage(const QString &message)
 {
     qDebug() << "Message received:" << message;
-    // TODO: Process message with Rogerian engine
-    // For now, just echo back a reply
-    emit rogerianReply("You said: " + message);
+    std::string response = m_engine.respond(message.toStdString());
+    emit rogerianReply(QString::fromStdString(response));
 }
 
 void Bridge::setLocale(const QString &locale)
 {
     qDebug() << "Locale set to:" << locale;
-    // TODO: Load the corresponding rule pack
+    m_engine.setLocale(locale.toStdString());
 }

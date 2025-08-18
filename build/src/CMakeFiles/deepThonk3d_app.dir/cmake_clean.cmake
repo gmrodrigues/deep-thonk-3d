@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/deepThonk3d_app_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/deepThonk3d_app_autogen.dir/ParseCache.txt"
   "deepThonk3d_app_autogen"
+  "CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o"
+  "CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o.d"
   "CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o"
   "CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o"

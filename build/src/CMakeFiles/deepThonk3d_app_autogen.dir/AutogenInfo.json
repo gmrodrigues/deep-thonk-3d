@@ -15,6 +15,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.h",
+			"MU",
+			"APHCEUIYH4/moc_Engine.cpp",
+			null
+		],
+		[
 			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.h",
 			"MU",
 			"KZSOAEDHIY/moc_Bridge.cpp",
@@ -98,6 +104,11 @@
 	"SETTINGS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp",
+			"MU",
+			null
+		],
 		[
 			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp",
 			"MU",
