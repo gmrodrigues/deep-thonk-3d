@@ -65,9 +65,9 @@ ApplicationWindow {
   }
 
   function send() {
-    if (!prompt.text.length) return
-    bridge.submitMessage(prompt.text)           // C++ slot
+    if (!prompt.text.length) return    
     log.append("You: " + prompt.text + "\n")
+    bridge.submitMessage(prompt.text)           // C++ slot
     prompt.text = ""
   }
 }
