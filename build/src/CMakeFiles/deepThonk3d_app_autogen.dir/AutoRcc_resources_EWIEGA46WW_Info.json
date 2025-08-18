@@ -1,0 +1,23 @@
+{
+	"BUILD_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen",
+	"CMAKE_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src",
+	"CMAKE_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml"
+	],
+	"LOCK_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc",
+	"VERBOSITY" : 0
+}

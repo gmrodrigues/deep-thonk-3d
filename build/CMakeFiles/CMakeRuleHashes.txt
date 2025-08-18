@@ -1,0 +1,14 @@
+# Hashes of file build rules.
+23f8197e56e768d5e82514d2b9addde5 src/.rcc/qmlcache/deepThonk3d_qmlcache_loader.cpp
+43eb50d9b57f7717e54aa9cfc3f5563f src/.rcc/qmlcache/deepThonk3d_ui/qml/Main_qml.cpp
+5965a9916322b38cf11e353276c9b177 src/.rcc/qrc_deepThonk3d_raw_qml_0.cpp
+5134554fe07323efe0700890f5b8ddc4 src/.rcc/qrc_qmake_deepThonk3d.cpp
+a70de1ce288d3c25406a37ab2ff6c49e src/CMakeFiles/deepThonk3d_app_autogen
+a70de1ce288d3c25406a37ab2ff6c49e src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps
+741461074858ab6bb9c4d5eda81668af src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp
+42ec7d2faf53b332fee1932e5326a763 src/deepThonk3d_app_autogen/timestamp
+6ffad562d674364eb1514ee9a95361fc src/deepThonk3d_autogen/timestamp
+4f260d65d047d13a0a821b4f66aeb019 src/deepThonk3dplugin_autogen/timestamp
+c5406bd951bef1af4996b7343b2a5034 src/deepthonk3d_qmltyperegistrations.cpp
+415bdacf144ddeb40fbf6d980dff62d3 src/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml
+d6a28a3af3cf6d8e3c83155a153d8544 src/meta_types/qt6deepthonk3d_metatypes.json.gen

@@ -1,0 +1,39 @@
+{
+  "locale": "pt-BR",
+  "reflect": [
+    [ "eu", "você" ],
+    [ "meu", "seu" ],
+    [ "minha", "sua" ],
+    [ "mim", "você" ],
+    [ "sou", "é" ]
+  ],
+  "rules": [
+    {
+      "id": "sentimentos.sinto",
+      "category": "Sentimentos",
+      "pattern": "(?:eu\\s+sinto\\s+|tenho\\s+sentido\\s+)(.+)",
+      "outs": [
+        "Quando você diz que sente {1}, o que vem à mente agora?",
+        "Como é para você sentir {1} neste momento?"
+      ]
+    },
+    {
+      "id": "agencia.naoconsigo",
+      "category": "Agência",
+      "pattern": "eu\\s+(?:nao|não)\\s+consigo\\s+(.+)",
+      "outs": [
+        "O que torna difícil para você {1}?",
+        "Em que momentos {1} pareceu mais possível?"
+      ]
+    },
+    {
+      "id": "fallback.qualquer",
+      "category": "Geral",
+      "pattern": "(.+)",
+      "outs": [
+        "Fale mais sobre isso.",
+        "O que te chama atenção nisso agora?"
+      ]
+    }
+  ]
+}

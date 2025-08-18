@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/deepThonk3d">
+    <file alias="qmldir">/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/qmldir</file>
+  </qresource>
+</RCC>
+

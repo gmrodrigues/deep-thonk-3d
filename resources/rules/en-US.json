@@ -1,0 +1,38 @@
+{
+  "locale": "en-US",
+  "reflect": [
+    [ "I", "you" ],
+    [ "my", "your" ],
+    [ "me", "you" ],
+    [ "am", "are" ]
+  ],
+  "rules": [
+    {
+      "id": "feelings.sense",
+      "category": "Feelings",
+      "pattern": "(?:I\\s+feel\\s+|I\\s+am\\s+feeling\\s+)(.+)",
+      "outs": [
+        "When you say you feel {1}, what comes to mind now?",
+        "What is it like to feel {1} at this moment?"
+      ]
+    },
+    {
+      "id": "agency.cannot",
+      "category": "Agency",
+      "pattern": "I\\s+(?:can't|cannot|don’t|do not)\\s+(.+)",
+      "outs": [
+        "What makes it difficult for you to {1}?",
+        "When has {1} felt more possible?"
+      ]
+    },
+    {
+      "id": "fallback.any",
+      "category": "General",
+      "pattern": "(.+)",
+      "outs": [
+        "Say more about that.",
+        "What stands out to you in this?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+module deepThonk3d
+linktarget deepThonk3dplugin
+optional plugin deepThonk3dplugin
+classname deepThonk3dPlugin
+typeinfo deepThonk3d.qmltypes
+prefer :/deepThonk3d/
+Main 1.0 /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml
+
