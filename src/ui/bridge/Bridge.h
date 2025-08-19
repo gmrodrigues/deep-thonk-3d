@@ -2,8 +2,8 @@
 #define DEEPTHONK3D_BRIDGE_H
 
 #include <QObject>
-#include <QAbstractItemModel>
 #include "../../core/rogerian/Engine.h"
+#include "../model/RuleModel.h"
 
 class Bridge : public QObject
 {
@@ -12,6 +12,7 @@ class Bridge : public QObject
 
 public:
     explicit Bridge(QObject *parent = nullptr);
+    ~Bridge();
 
     QAbstractItemModel* ruleModel() const;
 
@@ -23,7 +24,7 @@ signals:
     void rogerianReply(const QString &reply);
 
 private:
-    QAbstractItemModel* m_ruleModel;
+    RuleModel* m_ruleModel;
     deep_thonk::Engine m_engine;
 };
 

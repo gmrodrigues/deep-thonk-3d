@@ -3,7 +3,7 @@
 #include <QFile>
 #include <QTextStream>
 
-Bridge::Bridge(QObject *parent) : QObject(parent), m_ruleModel(nullptr)
+Bridge::Bridge(QObject *parent) : QObject(parent)
 {
     // Load rule files from resources
     QFile enFile(":/resources/rules/en-US.json");
@@ -22,8 +22,15 @@ Bridge::Bridge(QObject *parent) : QObject(parent), m_ruleModel(nullptr)
         ptFile.close();
     }
 
+    m_ruleModel = new RuleModel(&m_engine, this);
+
     // Set default locale
     setLocale("en-US");
+}
+
+Bridge::~Bridge()
+{
+    delete m_ruleModel;
 }
 
 QAbstractItemModel* Bridge::ruleModel() const

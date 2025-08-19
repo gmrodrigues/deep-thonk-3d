@@ -1,0 +1,145 @@
+{
+	"BUILD_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_lib_autogen",
+	"CMAKE_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt",
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d",
+	"DEP_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_lib_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "deepThonk3d_lib_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.h",
+			"MU",
+			"APHCEUIYH4/moc_Engine.cpp",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.h",
+			"MU",
+			"KZSOAEDHIY/moc_Bridge.cpp",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/model/RuleModel.h",
+			"MU",
+			"FSA3S3MO23/moc_RuleModel.cpp",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/model/TreeItem.h",
+			"MU",
+			"FSA3S3MO23/moc_TreeItem.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_lib_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_lib_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_QMLINTEGRATION_LIB",
+		"QT_QMLMODELS_LIB",
+		"QT_QML_LIB",
+		"QT_QUICKCONTROLS2_LIB",
+		"QT_QUICK_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
+		"/usr/include/x86_64-linux-gnu/qt6",
+		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQml",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQuick",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQmlModels",
+		"/usr/include/x86_64-linux-gnu/qt6/QtOpenGL",
+		"/usr/include/x86_64-linux-gnu/qt6/QtQuickControls2",
+		"/usr/include",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++20",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_lib_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_lib_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_lib_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/model/RuleModel.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/model/TreeItem.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

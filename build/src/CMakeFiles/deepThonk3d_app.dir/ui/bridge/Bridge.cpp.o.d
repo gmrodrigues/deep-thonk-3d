@@ -333,22 +333,6 @@ src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o: \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/format \
  /usr/include/c++/13/charconv /usr/include/c++/13/span \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/../../core/rogerian/Engine.h \
  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/../../core/rogerian/Rules.h \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
@@ -366,6 +350,27 @@ src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o: \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
  /usr/include/c++/13/bits/regex_executor.tcc \
+ /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/../model/RuleModel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
+ /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/../model/../../core/rogerian/Engine.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \

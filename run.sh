@@ -20,6 +20,10 @@ cmake -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt6 ..
 echo "--- Compiling project with make ---"
 make -j$(nproc)
 
+# Run the tests
+echo "--- Running tests ---"
+ctest --verbose
+
 # Run the application
 echo "--- Running application ---"
 ./src/deepThonk3d_app

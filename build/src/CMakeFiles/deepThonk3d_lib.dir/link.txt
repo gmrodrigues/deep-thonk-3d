@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdeepThonk3d_lib.a CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/mocs_compilation.cpp.o CMakeFiles/deepThonk3d_lib.dir/core/rogerian/Engine.cpp.o CMakeFiles/deepThonk3d_lib.dir/ui/bridge/Bridge.cpp.o CMakeFiles/deepThonk3d_lib.dir/ui/model/TreeItem.cpp.o CMakeFiles/deepThonk3d_lib.dir/ui/model/RuleModel.cpp.o CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.o
+/usr/bin/ranlib libdeepThonk3d_lib.a

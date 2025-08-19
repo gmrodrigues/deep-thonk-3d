@@ -43,7 +43,6 @@
 #define __cpp_variable_templates 201304L
 #define __FLT32X_MAX_EXP__ 1024
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
-#define QT_OPENGL_LIB 1
 #define __FLT32_HAS_DENORM__ 1
 #define __UINT_FAST8_MAX__ 0xff
 #define __cpp_rvalue_reference 200610L
@@ -76,7 +75,6 @@
 #define __BFLT16_DECIMAL_DIG__ 4
 #define __linux 1
 #define __DEC32_EPSILON__ 1E-6DF
-#define QT_QMLMODELS_LIB 1
 #define __FLT_EVAL_METHOD_TS_18661_3__ 0
 #define __UINT32_MAX__ 0xffffffffU
 #define __GXX_EXPERIMENTAL_CXX0X__ 1
@@ -233,7 +231,6 @@
 #define _STDC_PREDEF_H 1
 #define __INT_LEAST32_MAX__ 0x7fffffff
 #define __GCC_ATOMIC_INT_LOCK_FREE 2
-#define QT_QUICK_LIB 1
 #define __FLT128_MAX_EXP__ 16384
 #define QT_QML_LIB 1
 #define __cpp_conditional_explicit 201806L
@@ -353,7 +350,6 @@
 #define __INTPTR_TYPE__ long int
 #define __UINT16_TYPE__ short unsigned int
 #define __WCHAR_TYPE__ int
-#define QT_QUICKCONTROLS2_LIB 1
 #define __pic__ 2
 #define __UINTPTR_MAX__ 0xffffffffffffffffUL
 #define __INT_FAST64_WIDTH__ 64

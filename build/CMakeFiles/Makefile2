@@ -64,20 +64,24 @@ CMAKE_BINARY_DIR = /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build
 
 # The main recursive "all" target.
 all: src/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: src/preinstall
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: src/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
+src/all: src/CMakeFiles/deepThonk3d_lib.dir/all
 src/all: src/CMakeFiles/deepThonk3d_app.dir/all
 .PHONY : src/all
 
@@ -86,25 +90,73 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
+src/clean: src/CMakeFiles/deepThonk3d_lib.dir/clean
 src/clean: src/CMakeFiles/deepThonk3d_app.dir/clean
+src/clean: src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/clean
+src/clean: src/CMakeFiles/deepThonk3d_lib_autogen.dir/clean
 src/clean: src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/clean
 src/clean: src/CMakeFiles/deepThonk3d_app_autogen.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
+# Directory level rules for directory tests
+
+# Recursive "all" directory target.
+tests/all: tests/CMakeFiles/deepThonk3d_tests.dir/all
+.PHONY : tests/all
+
+# Recursive "preinstall" directory target.
+tests/preinstall:
+.PHONY : tests/preinstall
+
+# Recursive "clean" directory target.
+tests/clean: tests/CMakeFiles/deepThonk3d_tests.dir/clean
+tests/clean: tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/clean
+tests/clean: tests/CMakeFiles/deepThonk3d_tests_autogen.dir/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/deepThonk3d_lib.dir
+
+# All Build rule for target.
+src/CMakeFiles/deepThonk3d_lib.dir/all: src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/all
+src/CMakeFiles/deepThonk3d_lib.dir/all: src/CMakeFiles/deepThonk3d_lib_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=5,6,7,8,9,10,11,12 "Built target deepThonk3d_lib"
+.PHONY : src/CMakeFiles/deepThonk3d_lib.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/deepThonk3d_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/deepThonk3d_lib.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib: src/CMakeFiles/deepThonk3d_lib.dir/rule
+.PHONY : deepThonk3d_lib
+
+# clean rule for target.
+src/CMakeFiles/deepThonk3d_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/clean
+.PHONY : src/CMakeFiles/deepThonk3d_lib.dir/clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/deepThonk3d_app.dir
 
 # All Build rule for target.
+src/CMakeFiles/deepThonk3d_app.dir/all: src/CMakeFiles/deepThonk3d_lib.dir/all
 src/CMakeFiles/deepThonk3d_app.dir/all: src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all
 src/CMakeFiles/deepThonk3d_app.dir/all: src/CMakeFiles/deepThonk3d_app_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target deepThonk3d_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=1,2,3 "Built target deepThonk3d_app"
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/deepThonk3d_app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_app.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/rule
@@ -119,10 +171,62 @@ src/CMakeFiles/deepThonk3d_app.dir/clean:
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/clean
 
 #=============================================================================
+# Target rules for target src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num= "Built target deepThonk3d_lib_autogen_timestamp_deps"
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib_autogen_timestamp_deps: src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule
+.PHONY : deepThonk3d_lib_autogen_timestamp_deps
+
+# clean rule for target.
+src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/clean
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/deepThonk3d_lib_autogen.dir
+
+# All Build rule for target.
+src/CMakeFiles/deepThonk3d_lib_autogen.dir/all: src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=13 "Built target deepThonk3d_lib_autogen"
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib_autogen: src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule
+.PHONY : deepThonk3d_lib_autogen
+
+# clean rule for target.
+src/CMakeFiles/deepThonk3d_lib_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen.dir/clean
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen.dir/clean
+
+#=============================================================================
 # Target rules for target src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir
 
 # All Build rule for target.
-src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all:
+src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all: src/CMakeFiles/deepThonk3d_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num= "Built target deepThonk3d_app_autogen_timestamp_deps"
@@ -130,7 +234,7 @@ src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all:
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/rule
@@ -151,12 +255,12 @@ src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/clean:
 src/CMakeFiles/deepThonk3d_app_autogen.dir/all: src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=8 "Built target deepThonk3d_app_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=4 "Built target deepThonk3d_app_autogen"
 .PHONY : src/CMakeFiles/deepThonk3d_app_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/deepThonk3d_app_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_app_autogen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/deepThonk3d_app_autogen.dir/rule
@@ -169,6 +273,86 @@ deepThonk3d_app_autogen: src/CMakeFiles/deepThonk3d_app_autogen.dir/rule
 src/CMakeFiles/deepThonk3d_app_autogen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen.dir/clean
 .PHONY : src/CMakeFiles/deepThonk3d_app_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/deepThonk3d_tests.dir
+
+# All Build rule for target.
+tests/CMakeFiles/deepThonk3d_tests.dir/all: src/CMakeFiles/deepThonk3d_lib.dir/all
+tests/CMakeFiles/deepThonk3d_tests.dir/all: tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/all
+tests/CMakeFiles/deepThonk3d_tests.dir/all: tests/CMakeFiles/deepThonk3d_tests_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests.dir/build.make tests/CMakeFiles/deepThonk3d_tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests.dir/build.make tests/CMakeFiles/deepThonk3d_tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=14,15,16,17 "Built target deepThonk3d_tests"
+.PHONY : tests/CMakeFiles/deepThonk3d_tests.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/deepThonk3d_tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 14
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/deepThonk3d_tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/deepThonk3d_tests.dir/rule
+
+# Convenience name for target.
+deepThonk3d_tests: tests/CMakeFiles/deepThonk3d_tests.dir/rule
+.PHONY : deepThonk3d_tests
+
+# clean rule for target.
+tests/CMakeFiles/deepThonk3d_tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests.dir/build.make tests/CMakeFiles/deepThonk3d_tests.dir/clean
+.PHONY : tests/CMakeFiles/deepThonk3d_tests.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/all: src/CMakeFiles/deepThonk3d_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num= "Built target deepThonk3d_tests_autogen_timestamp_deps"
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+deepThonk3d_tests_autogen_timestamp_deps: tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/rule
+.PHONY : deepThonk3d_tests_autogen_timestamp_deps
+
+# clean rule for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/clean
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/deepThonk3d_tests_autogen.dir
+
+# All Build rule for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen.dir/all: tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=18 "Built target deepThonk3d_tests_autogen"
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 10
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/deepThonk3d_tests_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen.dir/rule
+
+# Convenience name for target.
+deepThonk3d_tests_autogen: tests/CMakeFiles/deepThonk3d_tests_autogen.dir/rule
+.PHONY : deepThonk3d_tests_autogen
+
+# clean rule for target.
+tests/CMakeFiles/deepThonk3d_tests_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen.dir/clean
+.PHONY : tests/CMakeFiles/deepThonk3d_tests_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

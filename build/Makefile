@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -117,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named deepThonk3d_lib
+
+# Build rule for target.
+deepThonk3d_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_lib
+.PHONY : deepThonk3d_lib
+
+# fast build rule for target.
+deepThonk3d_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/build
+.PHONY : deepThonk3d_lib/fast
+
+#=============================================================================
 # Target rules for targets named deepThonk3d_app
 
 # Build rule for target.
@@ -128,6 +151,32 @@ deepThonk3d_app: cmake_check_build_system
 deepThonk3d_app/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/build
 .PHONY : deepThonk3d_app/fast
+
+#=============================================================================
+# Target rules for targets named deepThonk3d_lib_autogen_timestamp_deps
+
+# Build rule for target.
+deepThonk3d_lib_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_lib_autogen_timestamp_deps
+.PHONY : deepThonk3d_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+deepThonk3d_lib_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build
+.PHONY : deepThonk3d_lib_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named deepThonk3d_lib_autogen
+
+# Build rule for target.
+deepThonk3d_lib_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_lib_autogen
+.PHONY : deepThonk3d_lib_autogen
+
+# fast build rule for target.
+deepThonk3d_lib_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen.dir/build
+.PHONY : deepThonk3d_lib_autogen/fast
 
 #=============================================================================
 # Target rules for targets named deepThonk3d_app_autogen_timestamp_deps
@@ -155,6 +204,45 @@ deepThonk3d_app_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app_autogen.dir/build.make src/CMakeFiles/deepThonk3d_app_autogen.dir/build
 .PHONY : deepThonk3d_app_autogen/fast
 
+#=============================================================================
+# Target rules for targets named deepThonk3d_tests
+
+# Build rule for target.
+deepThonk3d_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_tests
+.PHONY : deepThonk3d_tests
+
+# fast build rule for target.
+deepThonk3d_tests/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests.dir/build.make tests/CMakeFiles/deepThonk3d_tests.dir/build
+.PHONY : deepThonk3d_tests/fast
+
+#=============================================================================
+# Target rules for targets named deepThonk3d_tests_autogen_timestamp_deps
+
+# Build rule for target.
+deepThonk3d_tests_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_tests_autogen_timestamp_deps
+.PHONY : deepThonk3d_tests_autogen_timestamp_deps
+
+# fast build rule for target.
+deepThonk3d_tests_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/build
+.PHONY : deepThonk3d_tests_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named deepThonk3d_tests_autogen
+
+# Build rule for target.
+deepThonk3d_tests_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 deepThonk3d_tests_autogen
+.PHONY : deepThonk3d_tests_autogen
+
+# fast build rule for target.
+deepThonk3d_tests_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build.make tests/CMakeFiles/deepThonk3d_tests_autogen.dir/build
+.PHONY : deepThonk3d_tests_autogen/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -163,9 +251,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... deepThonk3d_app_autogen"
 	@echo "... deepThonk3d_app_autogen_timestamp_deps"
+	@echo "... deepThonk3d_lib_autogen"
+	@echo "... deepThonk3d_lib_autogen_timestamp_deps"
+	@echo "... deepThonk3d_tests_autogen"
+	@echo "... deepThonk3d_tests_autogen_timestamp_deps"
 	@echo "... deepThonk3d_app"
+	@echo "... deepThonk3d_lib"
+	@echo "... deepThonk3d_tests"
 .PHONY : help
 
 

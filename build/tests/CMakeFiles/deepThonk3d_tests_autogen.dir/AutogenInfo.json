@@ -1,0 +1,135 @@
+{
+	"BUILD_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests_autogen",
+	"CMAKE_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests/CMakeLists.txt",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigExtras.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Targets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6VersionlessTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeature.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtFeatureCommon.cmake",
+		"/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicAppleHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTargetHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFindPackageHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicTestHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake",
+		"/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Dependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfig.cmake",
+		"/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestVersionlessTargets.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d",
+	"DEP_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests_autogen/deps",
+	"DEP_FILE_RULE_NAME" : "deepThonk3d_tests_autogen/timestamp",
+	"HEADERS" : 
+	[
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests/test_engine.h",
+			"MU",
+			"EWIEGA46WW/moc_test_engine.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_NO_DEBUG",
+		"QT_TESTCASE_BUILDDIR=\"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests\"",
+		"QT_TESTCASE_SOURCEDIR=\"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests\"",
+		"QT_TESTLIB_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src",
+		"/usr/include/x86_64-linux-gnu/qt6/QtTest",
+		"/usr/include/x86_64-linux-gnu/qt6",
+		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
+		"/usr/include/c++/13",
+		"/usr/include/x86_64-linux-gnu/c++/13",
+		"/usr/include/c++/13/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_GADGET_EXPORT",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-std=gnu++20",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/CMakeFiles/deepThonk3d_tests_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 4,
+	"SETTINGS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/CMakeFiles/deepThonk3d_tests_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests/test_engine.cpp",
+			"MU",
+			null
+		]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

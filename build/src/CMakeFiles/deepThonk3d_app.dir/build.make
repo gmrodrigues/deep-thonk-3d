@@ -69,19 +69,10 @@ include src/CMakeFiles/deepThonk3d_app.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/deepThonk3d_app.dir/flags.make
 
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/qml/Main.qml
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/resources/rules/pt-BR.json
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/resources/rules/en-US.json
-src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/cmake -E cmake_autorcc /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
-
 src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/flags.make
 src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o: src/deepThonk3d_app_autogen/mocs_compilation.cpp
 src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o"
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o -MF CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o -c /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.i: cmake_force
@@ -95,7 +86,7 @@ src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.
 src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/flags.make
 src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp
 src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o"
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o -MF CMakeFiles/deepThonk3d_app.dir/main.cpp.o.d -o CMakeFiles/deepThonk3d_app.dir/main.cpp.o -c /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp
 
 src/CMakeFiles/deepThonk3d_app.dir/main.cpp.i: cmake_force
@@ -106,65 +97,18 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/deepThonk3d_app.dir/main.cpp.s"
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp -o CMakeFiles/deepThonk3d_app.dir/main.cpp.s
 
-src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/flags.make
-src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp
-src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o -MF CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o.d -o CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o -c /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp
-
-src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.i"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp > CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.i
-
-src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.s"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.cpp -o CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.s
-
-src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/flags.make
-src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.cpp
-src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o -MF CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o.d -o CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o -c /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.cpp
-
-src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.i"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.cpp > CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.i
-
-src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.s"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/bridge/Bridge.cpp -o CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.s
-
-src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/flags.make
-src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp
-src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o: src/CMakeFiles/deepThonk3d_app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp
-
-src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s"
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
-
 # Object files for target deepThonk3d_app
 deepThonk3d_app_OBJECTS = \
 "CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/deepThonk3d_app.dir/main.cpp.o" \
-"CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o" \
-"CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o" \
-"CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+"CMakeFiles/deepThonk3d_app.dir/main.cpp.o"
 
 # External object files for target deepThonk3d_app
 deepThonk3d_app_EXTERNAL_OBJECTS =
 
 src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.o
 src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o
-src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o
-src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o
-src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
 src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/build.make
+src/deepThonk3d_app: src/libdeepThonk3d_lib.a
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6QuickControls2.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Quick.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6QmlModels.so.6.4.2
@@ -176,7 +120,7 @@ src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libGLX.so
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 src/deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable deepThonk3d_app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable deepThonk3d_app"
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/deepThonk3d_app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -187,7 +131,7 @@ src/CMakeFiles/deepThonk3d_app.dir/clean:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src && $(CMAKE_COMMAND) -P CMakeFiles/deepThonk3d_app.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/clean
 
-src/CMakeFiles/deepThonk3d_app.dir/depend: src/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp
+src/CMakeFiles/deepThonk3d_app.dir/depend:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/depend
 

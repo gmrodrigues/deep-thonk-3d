@@ -20,6 +20,7 @@ namespace deep_thonk {
     struct Rule {
         std::string id;
         std::string category;
+        std::string patternString;
         std::regex pattern;
         std::vector<RuleTemplate> outs;
         uint64_t hits = 0;

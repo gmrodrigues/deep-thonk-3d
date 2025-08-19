@@ -33,7 +33,8 @@ void Engine::loadRulesFromString(const std::string& jsonContent) {
         Rule rule;
         rule.id = item["id"];
         rule.category = item["category"];
-        rule.pattern = std::regex(item["pattern"].get<std::string>(), std::regex_constants::icase);
+        rule.patternString = item["pattern"].get<std::string>();
+        rule.pattern = std::regex(rule.patternString, std::regex_constants::icase);
         for (const auto& out : item["outs"]) {
             rule.outs.push_back({out.get<std::string>()});
         }
@@ -59,28 +60,62 @@ std::string Engine::respond(const std::string& userText) {
         return "I'm sorry, I don't have any rules loaded to respond.";
     }
 
-    std::smatch match;
-    for (const auto& rule : m_activePack->rules) {
-        if (std::regex_search(userText, match, rule.pattern)) {
-            std::string captured = match.size() > 1 ? match[1].str() : "";
-            std::string reflected = reflect(captured);
-            
-            int choice = rand() % rule.outs.size();
-            std::string responseTemplate = rule.outs[choice].text;
+    const Rule* bestRule = nullptr;
+    std::smatch bestMatch;
 
+    for (const auto& rule : m_activePack->rules) {
+        std::smatch currentMatch;
+        if (std::regex_search(userText, currentMatch, rule.pattern)) {
+            if (!bestRule || rule.patternString.length() > bestRule->patternString.length()) {
+                bestRule = &rule;
+                bestMatch = currentMatch;
+            }
+        }
+    }
+
+    if (bestRule) {
+        std::string captured = bestMatch.size() > 1 ? bestMatch[1].str() : "";
+        int choice = rand() % bestRule->outs.size();
+        std::string responseTemplate = bestRule->outs[choice].text;
+
+        if (responseTemplate.find("{1}") != std::string::npos) {
+            std::string reflected = reflect(captured);
             return std::regex_replace(responseTemplate, std::regex("\\{1\\}"), reflected);
         }
+        
+        return responseTemplate;
     }
 
     return pickNeutralProbe();
 }
 
 std::string Engine::reflect(const std::string& text) {
-    std::string reflected = text;
-    for (const auto& pair : m_activePack->reflectPairs) {
-        reflected = std::regex_replace(reflected, std::regex("\\b" + pair.first + "\\b", std::regex_constants::icase), pair.second);
+    std::string result;
+    std::regex tokenizer("([a-zA-Z']+|[^a-zA-Z']+)");
+    auto words_begin = std::sregex_iterator(text.begin(), text.end(), tokenizer);
+    auto words_end = std::sregex_iterator();
+
+    std::map<std::string, std::string> reflectionMap;
+    for(const auto& pair : m_activePack->reflectPairs) {
+        std::string key = pair.first;
+        std::transform(key.begin(), key.end(), key.begin(), ::tolower);
+        reflectionMap[key] = pair.second;
     }
-    return reflected;
+
+    for (std::sregex_iterator i = words_begin; i != words_end; ++i) {
+        std::string token = i->str();
+        std::string lower_token = token;
+        std::transform(lower_token.begin(), lower_token.end(), lower_token.begin(), ::tolower);
+
+        auto it = reflectionMap.find(lower_token);
+        if (it != reflectionMap.end()) {
+            result += it->second;
+        } else {
+            result += token;
+        }
+    }
+
+    return result;
 }
 
 std::string Engine::pickNeutralProbe() {
@@ -93,6 +128,10 @@ std::string Engine::pickNeutralProbe() {
         }
     }
     return "Please, tell me more.";
+}
+
+const std::map<std::string, RulePack> &Engine::getRulePacks() const {
+    return m_rulePacks;
 }
 
 }

@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -117,6 +127,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+src/CMakeFiles/deepThonk3d_lib.dir/rule:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib.dir/rule
+.PHONY : src/CMakeFiles/deepThonk3d_lib.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib: src/CMakeFiles/deepThonk3d_lib.dir/rule
+.PHONY : deepThonk3d_lib
+
+# fast build rule for target.
+deepThonk3d_lib/fast:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/build
+.PHONY : deepThonk3d_lib/fast
+
+# Convenience name for target.
 src/CMakeFiles/deepThonk3d_app.dir/rule:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_app.dir/rule
 .PHONY : src/CMakeFiles/deepThonk3d_app.dir/rule
@@ -129,6 +153,34 @@ deepThonk3d_app: src/CMakeFiles/deepThonk3d_app.dir/rule
 deepThonk3d_app/fast:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/build
 .PHONY : deepThonk3d_app/fast
+
+# Convenience name for target.
+src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib_autogen_timestamp_deps: src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/rule
+.PHONY : deepThonk3d_lib_autogen_timestamp_deps
+
+# fast build rule for target.
+deepThonk3d_lib_autogen_timestamp_deps/fast:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/build
+.PHONY : deepThonk3d_lib_autogen_timestamp_deps/fast
+
+# Convenience name for target.
+src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule
+.PHONY : src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule
+
+# Convenience name for target.
+deepThonk3d_lib_autogen: src/CMakeFiles/deepThonk3d_lib_autogen.dir/rule
+.PHONY : deepThonk3d_lib_autogen
+
+# fast build rule for target.
+deepThonk3d_lib_autogen/fast:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib_autogen.dir/build.make src/CMakeFiles/deepThonk3d_lib_autogen.dir/build
+.PHONY : deepThonk3d_lib_autogen/fast
 
 # Convenience name for target.
 src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/rule:
@@ -163,7 +215,7 @@ core/rogerian/Engine.o: core/rogerian/Engine.cpp.o
 
 # target to build an object file
 core/rogerian/Engine.cpp.o:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.o
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/core/rogerian/Engine.cpp.o
 .PHONY : core/rogerian/Engine.cpp.o
 
 core/rogerian/Engine.i: core/rogerian/Engine.cpp.i
@@ -171,7 +223,7 @@ core/rogerian/Engine.i: core/rogerian/Engine.cpp.i
 
 # target to preprocess a source file
 core/rogerian/Engine.cpp.i:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.i
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/core/rogerian/Engine.cpp.i
 .PHONY : core/rogerian/Engine.cpp.i
 
 core/rogerian/Engine.s: core/rogerian/Engine.cpp.s
@@ -179,32 +231,8 @@ core/rogerian/Engine.s: core/rogerian/Engine.cpp.s
 
 # target to generate assembly for a file
 core/rogerian/Engine.cpp.s:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/core/rogerian/Engine.cpp.s
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/core/rogerian/Engine.cpp.s
 .PHONY : core/rogerian/Engine.cpp.s
-
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o: deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o
-
-# target to build an object file
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.o
-
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.i: deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.i
-
-# target to preprocess a source file
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.i
-
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.s: deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.s
-
-# target to generate assembly for a file
-deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
-.PHONY : deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
 deepThonk3d_app_autogen/mocs_compilation.o: deepThonk3d_app_autogen/mocs_compilation.cpp.o
 .PHONY : deepThonk3d_app_autogen/mocs_compilation.o
@@ -229,6 +257,54 @@ deepThonk3d_app_autogen/mocs_compilation.s: deepThonk3d_app_autogen/mocs_compila
 deepThonk3d_app_autogen/mocs_compilation.cpp.s:
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/deepThonk3d_app_autogen/mocs_compilation.cpp.s
 .PHONY : deepThonk3d_app_autogen/mocs_compilation.cpp.s
+
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.o: deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.i: deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.s: deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
+deepThonk3d_lib_autogen/mocs_compilation.o: deepThonk3d_lib_autogen/mocs_compilation.cpp.o
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.o
+
+# target to build an object file
+deepThonk3d_lib_autogen/mocs_compilation.cpp.o:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/mocs_compilation.cpp.o
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.cpp.o
+
+deepThonk3d_lib_autogen/mocs_compilation.i: deepThonk3d_lib_autogen/mocs_compilation.cpp.i
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+deepThonk3d_lib_autogen/mocs_compilation.cpp.i:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/mocs_compilation.cpp.i
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.cpp.i
+
+deepThonk3d_lib_autogen/mocs_compilation.s: deepThonk3d_lib_autogen/mocs_compilation.cpp.s
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+deepThonk3d_lib_autogen/mocs_compilation.cpp.s:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/deepThonk3d_lib_autogen/mocs_compilation.cpp.s
+.PHONY : deepThonk3d_lib_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -259,7 +335,7 @@ ui/bridge/Bridge.o: ui/bridge/Bridge.cpp.o
 
 # target to build an object file
 ui/bridge/Bridge.cpp.o:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.o
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/bridge/Bridge.cpp.o
 .PHONY : ui/bridge/Bridge.cpp.o
 
 ui/bridge/Bridge.i: ui/bridge/Bridge.cpp.i
@@ -267,7 +343,7 @@ ui/bridge/Bridge.i: ui/bridge/Bridge.cpp.i
 
 # target to preprocess a source file
 ui/bridge/Bridge.cpp.i:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.i
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/bridge/Bridge.cpp.i
 .PHONY : ui/bridge/Bridge.cpp.i
 
 ui/bridge/Bridge.s: ui/bridge/Bridge.cpp.s
@@ -275,8 +351,56 @@ ui/bridge/Bridge.s: ui/bridge/Bridge.cpp.s
 
 # target to generate assembly for a file
 ui/bridge/Bridge.cpp.s:
-	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_app.dir/build.make src/CMakeFiles/deepThonk3d_app.dir/ui/bridge/Bridge.cpp.s
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/bridge/Bridge.cpp.s
 .PHONY : ui/bridge/Bridge.cpp.s
+
+ui/model/RuleModel.o: ui/model/RuleModel.cpp.o
+.PHONY : ui/model/RuleModel.o
+
+# target to build an object file
+ui/model/RuleModel.cpp.o:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/RuleModel.cpp.o
+.PHONY : ui/model/RuleModel.cpp.o
+
+ui/model/RuleModel.i: ui/model/RuleModel.cpp.i
+.PHONY : ui/model/RuleModel.i
+
+# target to preprocess a source file
+ui/model/RuleModel.cpp.i:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/RuleModel.cpp.i
+.PHONY : ui/model/RuleModel.cpp.i
+
+ui/model/RuleModel.s: ui/model/RuleModel.cpp.s
+.PHONY : ui/model/RuleModel.s
+
+# target to generate assembly for a file
+ui/model/RuleModel.cpp.s:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/RuleModel.cpp.s
+.PHONY : ui/model/RuleModel.cpp.s
+
+ui/model/TreeItem.o: ui/model/TreeItem.cpp.o
+.PHONY : ui/model/TreeItem.o
+
+# target to build an object file
+ui/model/TreeItem.cpp.o:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/TreeItem.cpp.o
+.PHONY : ui/model/TreeItem.cpp.o
+
+ui/model/TreeItem.i: ui/model/TreeItem.cpp.i
+.PHONY : ui/model/TreeItem.i
+
+# target to preprocess a source file
+ui/model/TreeItem.cpp.i:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/TreeItem.cpp.i
+.PHONY : ui/model/TreeItem.cpp.i
+
+ui/model/TreeItem.s: ui/model/TreeItem.cpp.s
+.PHONY : ui/model/TreeItem.s
+
+# target to generate assembly for a file
+ui/model/TreeItem.cpp.s:
+	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/deepThonk3d_lib.dir/build.make src/CMakeFiles/deepThonk3d_lib.dir/ui/model/TreeItem.cpp.s
+.PHONY : ui/model/TreeItem.cpp.s
 
 # Help Target
 help:
@@ -286,24 +410,37 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... deepThonk3d_app_autogen"
 	@echo "... deepThonk3d_app_autogen_timestamp_deps"
+	@echo "... deepThonk3d_lib_autogen"
+	@echo "... deepThonk3d_lib_autogen_timestamp_deps"
 	@echo "... deepThonk3d_app"
+	@echo "... deepThonk3d_lib"
 	@echo "... core/rogerian/Engine.o"
 	@echo "... core/rogerian/Engine.i"
 	@echo "... core/rogerian/Engine.s"
-	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.o"
-	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.i"
-	@echo "... deepThonk3d_app_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... deepThonk3d_app_autogen/mocs_compilation.o"
 	@echo "... deepThonk3d_app_autogen/mocs_compilation.i"
 	@echo "... deepThonk3d_app_autogen/mocs_compilation.s"
+	@echo "... deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... deepThonk3d_lib_autogen/EWIEGA46WW/qrc_resources.s"
+	@echo "... deepThonk3d_lib_autogen/mocs_compilation.o"
+	@echo "... deepThonk3d_lib_autogen/mocs_compilation.i"
+	@echo "... deepThonk3d_lib_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... ui/bridge/Bridge.o"
 	@echo "... ui/bridge/Bridge.i"
 	@echo "... ui/bridge/Bridge.s"
+	@echo "... ui/model/RuleModel.o"
+	@echo "... ui/model/RuleModel.i"
+	@echo "... ui/model/RuleModel.s"
+	@echo "... ui/model/TreeItem.o"
+	@echo "... ui/model/TreeItem.i"
+	@echo "... ui/model/TreeItem.s"
 .PHONY : help
 
 

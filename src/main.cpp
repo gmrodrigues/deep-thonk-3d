@@ -5,12 +5,13 @@
 
 int main(int argc, char *argv[])
 {
+    Q_INIT_RESOURCE(resources);
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
 
-    Bridge bridge;
-    engine.rootContext()->setContextProperty("bridge", &bridge);
+    qmlRegisterType<Bridge>("com.deepthonk", 1, 0, "Bridge");
 
     const QUrl url(QStringLiteral("qrc:/ui/qml/Main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
@@ -21,13 +22,7 @@ int main(int argc, char *argv[])
 
     engine.load(url);
 
-    // Connect the C++ signal to a QML slot/function
-    QObject* rootObject = engine.rootObjects().first();
-    QObject::connect(&bridge, &Bridge::rogerianReply,
-                     rootObject, [rootObject](const QString &reply) {
-        QMetaObject::invokeMethod(rootObject->findChild<QObject*>("log"), "append",
-                                  Q_ARG(QString, "Therapist: " + reply + "\n"));
-    });
+
 
     return app.exec();
 }

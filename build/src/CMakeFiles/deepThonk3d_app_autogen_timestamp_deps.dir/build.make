@@ -67,6 +67,7 @@ include src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/compiler_depen
 include src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/progress.make
 
 src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps: src/libdeepThonk3d_lib.a
 
 deepThonk3d_app_autogen_timestamp_deps: src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps
 deepThonk3d_app_autogen_timestamp_deps: src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/build.make

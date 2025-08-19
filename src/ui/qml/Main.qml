@@ -1,14 +1,16 @@
 import QtQuick
 import QtQuick.Controls 2.15
 import QtQuick.Layouts
+import com.deepthonk 1.0
 
 ApplicationWindow {
   visible: true; width: 1100; height: 700; title: "deepThonk3d — Therapist MVP"
 
-  Component.onCompleted: {
-    bridge.rogerianReply.connect(function(text) {
+  Bridge {
+    id: bridge
+    onRogerianReply: (text) => {
       log.append("Therapist: " + text + "\n")
-    })
+    }
   }
 
   menuBar: MenuBar {
@@ -42,22 +44,29 @@ ApplicationWindow {
     ColumnLayout {
       Layout.fillHeight: true; Layout.preferredWidth: parent.width * 0.40; spacing: 8
       Label { text: qsTr("Therapist Structure"); font.pixelSize: 16 }
-      TableView {
-        id: ruleTableView
+      TreeView {
+        id: ruleTreeView
         Layout.fillWidth: true; Layout.fillHeight: true
-        Component.onCompleted: function() {
-          ruleTableView.model = bridge.ruleModel
-        }
+        model: bridge.ruleModel
+
         delegate: RowLayout {
             width: parent.width
-            spacing: 10
+
             Text {
                 text: model.name
-                width: 150
+                Layout.preferredWidth: 150
+            }
+            Text {
+                text: model.category
+                Layout.preferredWidth: 200
+            }
+            Text {
+                text: model.templates
+                Layout.preferredWidth: 80
             }
             Text {
                 text: model.hits
-                width: 50
+                Layout.preferredWidth: 50
             }
         }
       }

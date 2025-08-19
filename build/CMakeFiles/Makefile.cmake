@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
   "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt"
   "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc"
+  "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/tests/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake"
@@ -205,6 +206,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets-none.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2VersionlessTargets.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestDependencies.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestTargets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestTargets.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qt6Test/Qt6TestVersionlessTargets.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
@@ -250,14 +259,23 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/deepThonk3d_lib_autogen.dir/AutogenInfo.json"
+  "src/CMakeFiles/deepThonk3d_lib_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   "src/CMakeFiles/deepThonk3d_app_autogen.dir/AutogenInfo.json"
-  "src/CMakeFiles/deepThonk3d_app_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/deepThonk3d_tests_autogen.dir/AutogenInfo.json"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/deepThonk3d_lib.dir/DependInfo.cmake"
   "src/CMakeFiles/deepThonk3d_app.dir/DependInfo.cmake"
+  "src/CMakeFiles/deepThonk3d_lib_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "src/CMakeFiles/deepThonk3d_lib_autogen.dir/DependInfo.cmake"
   "src/CMakeFiles/deepThonk3d_app_autogen_timestamp_deps.dir/DependInfo.cmake"
   "src/CMakeFiles/deepThonk3d_app_autogen.dir/DependInfo.cmake"
+  "tests/CMakeFiles/deepThonk3d_tests.dir/DependInfo.cmake"
+  "tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/DependInfo.cmake"
+  "tests/CMakeFiles/deepThonk3d_tests_autogen.dir/DependInfo.cmake"
   )

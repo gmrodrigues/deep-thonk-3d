@@ -2,6 +2,7 @@
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/deepThonk3d_app_autogen/moc_predefs.h \
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Engine.h \
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/core/rogerian/Rules.h \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/ui/model/RuleModel.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -287,7 +288,9 @@
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QAbstractItemModel \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QModelIndex \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qanystringview.h \

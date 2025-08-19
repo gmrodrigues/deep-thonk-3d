@@ -1,12 +1,31 @@
 {
   "locale": "en-US",
   "reflect": [
-    [ "I", "you" ],
+    [ "i", "you" ],
     [ "my", "your" ],
     [ "me", "you" ],
-    [ "am", "are" ]
+    [ "am", "are" ],
+    [ "you", "i" ],
+    [ "your", "my" ],
+    [ "are", "am" ]
   ],
   "rules": [
+    {
+      "id": "greeting.hello",
+      "category": "Greeting",
+      "pattern": "(?:Hello|Hi|Hey)",
+      "outs": [
+        "How do you do. Please state your problem."
+      ]
+    },
+    {
+      "id": "feelings.general",
+      "category": "Feelings",
+      "pattern": "(?:i feel|i am feeling)",
+      "outs": [
+        "Tell me more about these feelings."
+      ]
+    },
     {
       "id": "feelings.sense",
       "category": "Feelings",
@@ -23,6 +42,47 @@
       "outs": [
         "What makes it difficult for you to {1}?",
         "When has {1} felt more possible?"
+      ]
+    },
+    {
+      "id": "reflection.think",
+      "category": "Reflection",
+      "pattern": "I think (.+)",
+      "outs": [
+        "So, you think {1}."
+      ]
+    },
+    {
+      "id": "reflection.think2",
+      "category": "Reflection",
+      "pattern": "^I think (.*)$",
+      "outs": [
+        "You think {1}?",
+        "But are you sure that {1}?"
+      ]
+    },
+    {
+      "id": "reflection.am",
+      "category": "Reflection",
+      "pattern": "^I am (.*)$",
+      "outs": [
+        "Why do you say you are {1}?"
+      ]
+    },
+    {
+      "id": "reflection.youare",
+      "category": "Reflection",
+      "pattern": "^You are (.*)$",
+      "outs": [
+        "What makes you think I am {1}?"
+      ]
+    },
+    {
+      "id": "reflection.test",
+      "category": "Test",
+      "pattern": "Please reflect: (.+)",
+      "outs": [
+        "{1}"
       ]
     },
     {

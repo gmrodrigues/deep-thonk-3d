@@ -1,0 +1,42 @@
+Start testing: Aug 18 21:37 -03
+----------------------------------------------------------
+1/1 Testing: deepThonk3d_tests
+1/1 Test: deepThonk3d_tests
+Command: "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests"
+Directory: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build
+"deepThonk3d_tests" start time: Aug 18 21:37 -03
+Output:
+----------------------------------------------------------
+********* Start testing of TestEngine *********
+Config: Using QtTest library 6.4.2, Qt 6.4.2 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 13.2.0), ubuntu 24.04
+PASS   : TestEngine::initTestCase()
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testResponse(greeting)
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testResponse(i feel)
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testReflection(i am)
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testReflection(you are)
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testReflection(i think)
+Loaded rules for locale: en-US
+Active locale set to: en-US
+PASS   : TestEngine::testReflection(case insensitive)
+PASS   : TestEngine::cleanupTestCase()
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 13ms
+********* Finished testing of TestEngine *********
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"deepThonk3d_tests" end time: Aug 18 21:37 -03
+"deepThonk3d_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 18 21:37 -03
