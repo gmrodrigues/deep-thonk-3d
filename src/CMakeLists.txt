@@ -44,5 +44,6 @@ target_link_libraries(deepThonk3d_app
         Qt::Core
         Qt::Gui
         Qt::Qml
+        Qt::Widgets
 )
 

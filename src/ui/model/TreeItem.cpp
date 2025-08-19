@@ -1,11 +1,15 @@
 #include "TreeItem.h"
+#include <QDebug>
 
 TreeItem::TreeItem(const QList<QVariant> &data, TreeItem *parent)
     : m_itemData(data), m_parentItem(parent)
-{}
+{
+    qDebug() << "Created TreeItem with data:" << m_itemData;
+}
 
 TreeItem::~TreeItem()
 {
+    qDebug() << "Deleting TreeItem with data:" << m_itemData;
     qDeleteAll(m_childItems);
 }
 
@@ -42,6 +46,7 @@ void TreeItem::setData(int column, const QVariant &value)
 {
     if (column < 0 || column >= m_itemData.size())
         return;
+    qDebug() << "Setting data for item" << m_itemData[0].toString() << "at column" << column << "from" << m_itemData[column] << "to" << value;
     m_itemData[column] = value;
 }
 

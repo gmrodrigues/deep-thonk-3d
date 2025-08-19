@@ -69,6 +69,7 @@ include tests/CMakeFiles/deepThonk3d_tests_autogen.dir/progress.make
 tests/CMakeFiles/deepThonk3d_tests_autogen: tests/deepThonk3d_tests_autogen/timestamp
 
 tests/deepThonk3d_tests_autogen/timestamp: /usr/lib/qt6/libexec/moc
+tests/deepThonk3d_tests_autogen/timestamp: /usr/lib/qt6/libexec/uic
 tests/deepThonk3d_tests_autogen/timestamp: tests/CMakeFiles/deepThonk3d_tests_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target deepThonk3d_tests"
 	cd /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests && /usr/bin/cmake -E cmake_autogen /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/CMakeFiles/deepThonk3d_tests_autogen.dir/AutogenInfo.json ""

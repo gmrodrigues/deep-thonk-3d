@@ -23,7 +23,8 @@
 		"QT_NETWORK_LIB",
 		"QT_NO_DEBUG",
 		"QT_QMLINTEGRATION_LIB",
-		"QT_QML_LIB"
+		"QT_QML_LIB",
+		"QT_WIDGETS_LIB"
 	],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -42,6 +43,7 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtQml",
 		"/usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration",
 		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
+		"/usr/include/x86_64-linux-gnu/qt6/QtWidgets",
 		"/usr/include",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
@@ -80,7 +82,7 @@
 	"PARALLEL" : 8,
 	"PARSE_CACHE_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
-	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
 	"SETTINGS_FILE" : "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/src/CMakeFiles/deepThonk3d_app_autogen.dir/AutogenUsed.txt",

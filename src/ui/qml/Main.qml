@@ -1,18 +1,10 @@
 import QtQuick
 import QtQuick.Controls 2.15
 import QtQuick.Layouts
-import com.deepthonk 1.0
+
 
 ApplicationWindow {
   visible: true; width: 1100; height: 700; title: "deepThonk3d — Therapist MVP"
-
-  Bridge {
-    id: bridge
-    onRogerianReply: (text, ruleId) => {
-      const time = new Date().toLocaleTimeString();
-      log.append("[" + time + "] Therapist [" + ruleId + "]: " + text + "\n")
-    }
-  }
 
   menuBar: MenuBar {
     Menu { title: qsTr("Language")
@@ -28,7 +20,7 @@ ApplicationWindow {
     ColumnLayout {
       Layout.fillHeight: true; Layout.preferredWidth: parent.width * 0.60; spacing: 8
       TextArea {
-        id: log; readOnly: true; wrapMode: TextEdit.WrapAnywhere
+        id: chatLog; readOnly: true; wrapMode: TextEdit.WrapAnywhere
         Layout.fillWidth: true; Layout.fillHeight: true
       }
       RowLayout {
@@ -90,10 +82,18 @@ ApplicationWindow {
     }
   }
 
+  Connections {
+    target: bridge
+    function onRogerianReply(reply, ruleId) {
+      const timestamp = new Date().toLocaleTimeString();
+      chatLog.text += `[${timestamp}] Therapist: ${reply} (rule: ${ruleId})\n`;
+    }
+  }
+
   function send() {
     if (!prompt.text.length) return
     const time = new Date().toLocaleTimeString();
-    log.append("[" + time + "] You: " + prompt.text + "\n")
+    chatLog.append("[" + time + "] You: " + prompt.text + "\n")
     bridge.submitMessage(prompt.text)
     prompt.text = ""
   }

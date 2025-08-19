@@ -66,8 +66,9 @@ include tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/compiler_d
 # Include the progress variables for this target.
 include tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps.dir/progress.make
 
-tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps: src/libdeepThonk3d_lib.a
+tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Test.so.6.4.2
 
 deepThonk3d_tests_autogen_timestamp_deps: tests/CMakeFiles/deepThonk3d_tests_autogen_timestamp_deps

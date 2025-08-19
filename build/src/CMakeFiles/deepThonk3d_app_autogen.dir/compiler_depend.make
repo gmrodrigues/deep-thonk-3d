@@ -2772,6 +2772,30 @@ src/deepThonk3d_app_autogen/timestamp: src/deepThonk3d_app_autogen/moc_predefs.h
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
   /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
+  /usr/bin/cmake \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/CMakeLists.txt \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/main.cpp \
+  /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/src/resources.qrc \
   /usr/bin/cmake
 
 

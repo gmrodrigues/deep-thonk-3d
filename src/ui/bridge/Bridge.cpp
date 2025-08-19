@@ -30,7 +30,6 @@ Bridge::Bridge(QObject *parent) : QObject(parent)
 
 Bridge::~Bridge()
 {
-    delete m_ruleModel;
 }
 
 QAbstractItemModel* Bridge::ruleModel() const

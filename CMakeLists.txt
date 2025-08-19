@@ -11,7 +11,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTORCC ON)
 
 # Find Qt
-find_package(Qt6 6.4.2 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2)
+find_package(Qt6 6.4.2 REQUIRED COMPONENTS Core Gui Qml Quick QuickControls2 Widgets)
 
 # Add source code
 add_subdirectory(src)

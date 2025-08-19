@@ -115,6 +115,7 @@ src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6QmlModels.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Qml.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2
+src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 src/deepThonk3d_app: /usr/lib/x86_64-linux-gnu/libGLX.so

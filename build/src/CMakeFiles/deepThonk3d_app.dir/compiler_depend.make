@@ -394,6 +394,7 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qlogging.h \
@@ -414,6 +415,7 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopedpointer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
@@ -447,13 +449,24 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QGuiApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
   /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
@@ -481,6 +494,11 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
   /usr/include/x86_64-linux-gnu/qt6/QtQml/qtqmlexports.h \
   /usr/include/x86_64-linux-gnu/qt6/QtQml/qtqmlglobal.h \
   /usr/include/x86_64-linux-gnu/qt6/QtQmlIntegration/qqmlintegration.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
@@ -532,11 +550,15 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/QGuiApplication:
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
 
@@ -558,6 +580,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringliteral.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
@@ -574,9 +598,15 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qpointer.h:
 
@@ -597,6 +627,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
@@ -710,6 +742,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
@@ -743,6 +777,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/x86_64-linux-gnu/bits/syscall.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
@@ -796,6 +832,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
+
 /usr/include/c++/13/bits/stl_map.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
@@ -803,6 +841,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/c++/13/locale:
 
 /usr/include/c++/13/bits/stl_numeric.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -882,6 +922,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/c++/13/bits/regex.tcc:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
+
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
@@ -921,6 +963,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/c++/13/bits/utility.h:
 
 /usr/include/c++/13/tr1/beta_function.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h:
 
 /usr/include/c++/13/bits/move.h:
 
@@ -975,6 +1019,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
 
 /usr/include/c++/13/bits/locale_facets.h:
 
@@ -1092,6 +1138,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 
 /usr/include/asm-generic/errno-base.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/c++/13/bits/ranges_util.h:
@@ -1107,6 +1155,8 @@ src/CMakeFiles/deepThonk3d_app.dir/main.cpp.o: /home/glauber/arquivos/projetos/g
 /usr/include/c++/13/bits/locale_classes.tcc:
 
 /usr/include/c++/13/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h:
 
 /usr/include/c++/13/bits/regex_automaton.tcc:
 
@@ -1276,6 +1326,8 @@ src/deepThonk3d_app_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/13/cwchar:
 
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
+
 /usr/include/c++/13/bits/stl_pair.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -1349,6 +1401,8 @@ src/deepThonk3d_app_autogen/mocs_compilation.cpp:
 /usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/span:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 

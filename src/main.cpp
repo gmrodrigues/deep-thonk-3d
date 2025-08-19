@@ -1,4 +1,4 @@
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include "ui/bridge/Bridge.h"
@@ -7,11 +7,12 @@ int main(int argc, char *argv[])
 {
     Q_INIT_RESOURCE(resources);
 
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
 
-    qmlRegisterType<Bridge>("com.deepthonk", 1, 0, "Bridge");
+    Bridge *bridge = new Bridge(&engine);
+    engine.rootContext()->setContextProperty("bridge", bridge);
 
     const QUrl url(QStringLiteral("qrc:/ui/qml/Main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
