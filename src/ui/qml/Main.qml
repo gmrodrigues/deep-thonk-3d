@@ -9,7 +9,8 @@ ApplicationWindow {
   Bridge {
     id: bridge
     onRogerianReply: (text, ruleId) => {
-      log.append("Therapist [" + ruleId + "]: " + text + "\n")
+      const time = new Date().toLocaleTimeString();
+      log.append("[" + time + "] Therapist [" + ruleId + "]: " + text + "\n")
     }
   }
 
@@ -44,6 +45,13 @@ ApplicationWindow {
     ColumnLayout {
       Layout.fillHeight: true; Layout.preferredWidth: parent.width * 0.40; spacing: 8
       Label { text: qsTr("Therapist Structure"); font.pixelSize: 16 }
+      RowLayout {
+        Text { text: "ID"; Layout.preferredWidth: 100; font.bold: true }
+        Text { text: "Category"; Layout.preferredWidth: 80; font.bold: true }
+        Text { text: "Pattern"; Layout.preferredWidth: 120; font.bold: true }
+        Text { text: "Templates"; Layout.preferredWidth: 70; font.bold: true; horizontalAlignment: Text.AlignHCenter }
+        Text { text: "Hits"; Layout.preferredWidth: 50; font.bold: true; horizontalAlignment: Text.AlignHCenter }
+      }
       TreeView {
         id: ruleTreeView
         Layout.fillWidth: true; Layout.fillHeight: true
@@ -54,19 +62,28 @@ ApplicationWindow {
 
             Text {
                 text: model.name
-                Layout.preferredWidth: 150
+                Layout.preferredWidth: 100
+                elide: Text.ElideRight
             }
             Text {
                 text: model.category
-                Layout.preferredWidth: 200
+                Layout.preferredWidth: 80
+                elide: Text.ElideRight
+            }
+            Text {
+                text: model.pattern
+                Layout.preferredWidth: 120
+                elide: Text.ElideRight
             }
             Text {
                 text: model.templates
-                Layout.preferredWidth: 80
+                Layout.preferredWidth: 70
+                horizontalAlignment: Text.AlignHCenter
             }
             Text {
                 text: model.hits
                 Layout.preferredWidth: 50
+                horizontalAlignment: Text.AlignHCenter
             }
         }
       }
@@ -74,9 +91,10 @@ ApplicationWindow {
   }
 
   function send() {
-    if (!prompt.text.length) return    
-    log.append("You: " + prompt.text + "\n")
-    bridge.submitMessage(prompt.text)           // C++ slot
+    if (!prompt.text.length) return
+    const time = new Date().toLocaleTimeString();
+    log.append("[" + time + "] You: " + prompt.text + "\n")
+    bridge.submitMessage(prompt.text)
     prompt.text = ""
   }
 }

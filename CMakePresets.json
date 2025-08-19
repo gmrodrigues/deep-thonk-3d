@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "linux-debug",
+      "displayName": "Linux Debug",
+      "description": "Builds for Linux in Debug mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/linux-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "wasm-debug",
+      "displayName": "WASM Debug",
+      "description": "Builds for WebAssembly in Debug mode.",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/wasm-debug",
+      "toolchainFile": "$env{QT6_INSTALL_DIR}/6.4.2/wasm_32/lib/cmake/Qt6/Qt6Toolchain.cmake",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "linux-debug",
+      "configurePreset": "linux-debug"
+    },
+    {
+      "name": "wasm-debug",
+      "configurePreset": "wasm-debug"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "linux-debug",
+      "configurePreset": "linux-debug",
+      "output": {"outputOnFailure": true}
+    }
+  ]
+}

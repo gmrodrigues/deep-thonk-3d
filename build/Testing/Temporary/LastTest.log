@@ -1,10 +1,10 @@
-Start testing: Aug 18 21:46 -03
+Start testing: Aug 18 21:56 -03
 ----------------------------------------------------------
 1/1 Testing: deepThonk3d_tests
 1/1 Test: deepThonk3d_tests
 Command: "/home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build/tests/deepThonk3d_tests"
 Directory: /home/glauber/arquivos/projetos/gamedev/deep-thonk-3d/build
-"deepThonk3d_tests" start time: Aug 18 21:46 -03
+"deepThonk3d_tests" start time: Aug 18 21:56 -03
 Output:
 ----------------------------------------------------------
 ********* Start testing of TestEngine *********
@@ -35,8 +35,8 @@ Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 12ms
 Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"deepThonk3d_tests" end time: Aug 18 21:46 -03
+"deepThonk3d_tests" end time: Aug 18 21:56 -03
 "deepThonk3d_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Aug 18 21:46 -03
+End testing: Aug 18 21:56 -03

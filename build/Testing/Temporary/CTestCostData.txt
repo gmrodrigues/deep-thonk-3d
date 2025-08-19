@@ -1,2 +1,2 @@
-deepThonk3d_tests 5 0.00370774
+deepThonk3d_tests 8 0.00234963
 ---

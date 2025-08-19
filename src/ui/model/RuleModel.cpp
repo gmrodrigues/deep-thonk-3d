@@ -5,7 +5,7 @@
 RuleModel::RuleModel(deep_thonk::Engine* engine, QObject *parent)
     : QAbstractItemModel(parent), m_engine(engine)
 {
-    rootItem = new TreeItem({tr("Locale"), tr("Category"), tr("Pattern"), tr("Hits")});
+    rootItem = new TreeItem({tr("Locale"), tr("Category"), tr("Pattern"), tr("Templates"), tr("Hits")});
     setupModelData(m_engine->getRulePacks(), rootItem);
 }
 
@@ -37,11 +37,14 @@ QVariant RuleModel::data(const QModelIndex &index, int role) const
         case CategoryRole:
             value = item->data(1);
             break;
-        case TemplatesRole:
+        case PatternRole:
             value = item->data(2);
             break;
-        case HitsRole:
+        case TemplatesRole:
             value = item->data(3);
+            break;
+        case HitsRole:
+            value = item->data(4);
             break;
         default:
             return QVariant();
@@ -55,6 +58,7 @@ QHash<int, QByteArray> RuleModel::roleNames() const
     QHash<int, QByteArray> roles;
     roles[NameRole] = "name";
     roles[CategoryRole] = "category";
+    roles[PatternRole] = "pattern";
     roles[TemplatesRole] = "templates";
     roles[HitsRole] = "hits";
     return roles;
@@ -128,8 +132,8 @@ void RuleModel::onRuleMatched(const QString& ruleId)
 
     TreeItem* item = findRuleItem(ruleId, rootItem);
     if (item) {
-        QModelIndex index = createIndex(item->row(), 3, item);
-        item->setData(3, item->data(3).toULongLong() + 1);
+        QModelIndex index = createIndex(item->row(), 4, item);
+        item->setData(4, item->data(4).toULongLong() + 1);
         emit dataChanged(index, index, {HitsRole});
     }
 }
@@ -153,7 +157,7 @@ void RuleModel::setupModelData(const std::map<std::string, deep_thonk::RulePack>
 {
     for(auto const& [locale, pack] : rulePacks)
     {
-        TreeItem *localeItem = new TreeItem({QString::fromStdString(locale), QVariant(), QVariant(), QVariant()}, parent);
+        TreeItem *localeItem = new TreeItem({QString::fromStdString(locale), QVariant(), QVariant(), QVariant(), QVariant()}, parent);
         parent->appendChild(localeItem);
 
         std::map<std::string, TreeItem*> categoryItems;
@@ -163,7 +167,7 @@ void RuleModel::setupModelData(const std::map<std::string, deep_thonk::RulePack>
             TreeItem* categoryItem;
             if(categoryItems.find(rule.category) == categoryItems.end())
             {
-                categoryItem = new TreeItem({QString::fromStdString(rule.category), QVariant(), QVariant(), QVariant()}, localeItem);
+                categoryItem = new TreeItem({QString::fromStdString(rule.category), QVariant(), QVariant(), QVariant(), QVariant()}, localeItem);
                 localeItem->appendChild(categoryItem);
                 categoryItems[rule.category] = categoryItem;
             }
@@ -172,7 +176,13 @@ void RuleModel::setupModelData(const std::map<std::string, deep_thonk::RulePack>
                 categoryItem = categoryItems[rule.category];
             }
 
-            TreeItem *ruleItem = new TreeItem({QString::fromStdString(rule.id), QString::fromStdString(rule.category), QString::fromStdString("..."), QVariant(static_cast<qulonglong>(rule.hits))}, categoryItem);
+            TreeItem *ruleItem = new TreeItem({
+                QString::fromStdString(rule.id),
+                QString::fromStdString(rule.category),
+                QString::fromStdString(rule.patternString),
+                QVariant(static_cast<qulonglong>(rule.outs.size())),
+                QVariant(static_cast<qulonglong>(rule.hits))
+            }, categoryItem);
             categoryItem->appendChild(ruleItem);
         }
     }
