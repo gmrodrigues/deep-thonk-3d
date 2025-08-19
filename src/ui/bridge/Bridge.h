@@ -21,7 +21,7 @@ public slots:
     void setLocale(const QString &locale);
 
 signals:
-    void rogerianReply(const QString &reply);
+    void rogerianReply(const QString &reply, const QString &ruleId);
 
 private:
     RuleModel* m_ruleModel;

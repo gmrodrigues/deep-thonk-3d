@@ -8,18 +8,23 @@
 
 namespace deep_thonk {
 
+struct Response {
+    std::string text;
+    std::string ruleId;
+};
+
 class Engine {
 public:
     Engine();
 
     void loadRulesFromString(const std::string& jsonContent);
     void setLocale(const std::string& locale);
-    std::string respond(const std::string& userText);
+    Response respond(const std::string& userText);
     const std::map<std::string, RulePack>& getRulePacks() const;
 
 private:
     std::string reflect(const std::string& text);
-    std::string pickNeutralProbe();
+    Response pickNeutralProbe();
 
     std::map<std::string, RulePack> m_rulePacks;
     RulePack* m_activePack = nullptr;

@@ -26,17 +26,18 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_Bridge_t {
-    uint offsetsAndSizes[20];
+    uint offsetsAndSizes[22];
     char stringdata0[7];
     char stringdata1[14];
     char stringdata2[1];
     char stringdata3[6];
-    char stringdata4[14];
-    char stringdata5[8];
-    char stringdata6[10];
-    char stringdata7[7];
-    char stringdata8[10];
-    char stringdata9[20];
+    char stringdata4[7];
+    char stringdata5[14];
+    char stringdata6[8];
+    char stringdata7[10];
+    char stringdata8[7];
+    char stringdata9[10];
+    char stringdata10[20];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_Bridge_t::offsetsAndSizes) + ofs), len 
@@ -46,17 +47,19 @@ Q_CONSTINIT static const qt_meta_stringdata_Bridge_t qt_meta_stringdata_Bridge =
         QT_MOC_LITERAL(7, 13),  // "rogerianReply"
         QT_MOC_LITERAL(21, 0),  // ""
         QT_MOC_LITERAL(22, 5),  // "reply"
-        QT_MOC_LITERAL(28, 13),  // "submitMessage"
-        QT_MOC_LITERAL(42, 7),  // "message"
-        QT_MOC_LITERAL(50, 9),  // "setLocale"
-        QT_MOC_LITERAL(60, 6),  // "locale"
-        QT_MOC_LITERAL(67, 9),  // "ruleModel"
-        QT_MOC_LITERAL(77, 19)   // "QAbstractItemModel*"
+        QT_MOC_LITERAL(28, 6),  // "ruleId"
+        QT_MOC_LITERAL(35, 13),  // "submitMessage"
+        QT_MOC_LITERAL(49, 7),  // "message"
+        QT_MOC_LITERAL(57, 9),  // "setLocale"
+        QT_MOC_LITERAL(67, 6),  // "locale"
+        QT_MOC_LITERAL(74, 9),  // "ruleModel"
+        QT_MOC_LITERAL(84, 19)   // "QAbstractItemModel*"
     },
     "Bridge",
     "rogerianReply",
     "",
     "reply",
+    "ruleId",
     "submitMessage",
     "message",
     "setLocale",
@@ -74,28 +77,28 @@ Q_CONSTINIT static const uint qt_meta_data_Bridge[] = {
        0,       // classname
        0,    0, // classinfo
        3,   14, // methods
-       1,   41, // properties
+       1,   43, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x06,    2 /* Public */,
+       1,    2,   32,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       4,    1,   35,    2, 0x0a,    4 /* Public */,
-       6,    1,   38,    2, 0x0a,    6 /* Public */,
+       5,    1,   37,    2, 0x0a,    5 /* Public */,
+       7,    1,   40,    2, 0x0a,    7 /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::QString,    3,
+    QMetaType::Void, QMetaType::QString, QMetaType::QString,    3,    4,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QString,    5,
-    QMetaType::Void, QMetaType::QString,    7,
+    QMetaType::Void, QMetaType::QString,    6,
+    QMetaType::Void, QMetaType::QString,    8,
 
  // properties: name, type, flags
-       8, 0x80000000 | 9, 0x00015409, uint(-1), 0,
+       9, 0x80000000 | 10, 0x00015409, uint(-1), 0,
 
        0        // eod
 };
@@ -114,6 +117,7 @@ Q_CONSTINIT const QMetaObject Bridge::staticMetaObject = { {
         // method 'rogerianReply'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
         // method 'submitMessage'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
@@ -130,7 +134,7 @@ void Bridge::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         auto *_t = static_cast<Bridge *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->rogerianReply((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->rogerianReply((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QString>>(_a[2]))); break;
         case 1: _t->submitMessage((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->setLocale((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
@@ -138,7 +142,7 @@ void Bridge::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (Bridge::*)(const QString & );
+            using _t = void (Bridge::*)(const QString & , const QString & );
             if (_t _q_method = &Bridge::rogerianReply; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
                 *result = 0;
                 return;
@@ -201,9 +205,9 @@ int Bridge::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 }
 
 // SIGNAL 0
-void Bridge::rogerianReply(const QString & _t1)
+void Bridge::rogerianReply(const QString & _t1, const QString & _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

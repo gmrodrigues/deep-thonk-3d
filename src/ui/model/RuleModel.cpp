@@ -122,6 +122,33 @@ int RuleModel::rowCount(const QModelIndex &parent) const
     return parentItem->childCount();
 }
 
+void RuleModel::onRuleMatched(const QString& ruleId)
+{
+    if (ruleId.isEmpty()) return;
+
+    TreeItem* item = findRuleItem(ruleId, rootItem);
+    if (item) {
+        QModelIndex index = createIndex(item->row(), 3, item);
+        item->setData(3, item->data(3).toULongLong() + 1);
+        emit dataChanged(index, index, {HitsRole});
+    }
+}
+
+TreeItem* RuleModel::findRuleItem(const QString& ruleId, TreeItem* parent)
+{
+    for (int i = 0; i < parent->childCount(); ++i) {
+        TreeItem* child = parent->child(i);
+        if (child->data(0).toString() == ruleId) {
+            return child;
+        }
+        TreeItem* result = findRuleItem(ruleId, child);
+        if (result) {
+            return result;
+        }
+    }
+    return nullptr;
+}
+
 void RuleModel::setupModelData(const std::map<std::string, deep_thonk::RulePack>& rulePacks, TreeItem *parent)
 {
     for(auto const& [locale, pack] : rulePacks)

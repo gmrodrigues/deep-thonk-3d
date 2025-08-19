@@ -41,8 +41,9 @@ QAbstractItemModel* Bridge::ruleModel() const
 void Bridge::submitMessage(const QString &message)
 {
     qDebug() << "Message received:" << message;
-    std::string response = m_engine.respond(message.toStdString());
-    emit rogerianReply(QString::fromStdString(response));
+    deep_thonk::Response response = m_engine.respond(message.toStdString());
+    emit rogerianReply(QString::fromStdString(response.text), QString::fromStdString(response.ruleId));
+    m_ruleModel->onRuleMatched(QString::fromStdString(response.ruleId));
 }
 
 void Bridge::setLocale(const QString &locale)

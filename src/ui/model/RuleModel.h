@@ -33,8 +33,12 @@ public:
 
     QHash<int, QByteArray> roleNames() const override;
 
+public slots:
+    void onRuleMatched(const QString& ruleId);
+
 private:
     void setupModelData(const std::map<std::string, deep_thonk::RulePack>& rulePacks, TreeItem *parent);
+    TreeItem* findRuleItem(const QString& ruleId, TreeItem* parent);
 
     TreeItem *rootItem;
     deep_thonk::Engine* m_engine;

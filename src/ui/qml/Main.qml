@@ -8,8 +8,8 @@ ApplicationWindow {
 
   Bridge {
     id: bridge
-    onRogerianReply: (text) => {
-      log.append("Therapist: " + text + "\n")
+    onRogerianReply: (text, ruleId) => {
+      log.append("Therapist [" + ruleId + "]: " + text + "\n")
     }
   }
 

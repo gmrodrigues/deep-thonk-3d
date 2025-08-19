@@ -38,6 +38,13 @@ QVariant TreeItem::data(int column) const
     return m_itemData.at(column);
 }
 
+void TreeItem::setData(int column, const QVariant &value)
+{
+    if (column < 0 || column >= m_itemData.size())
+        return;
+    m_itemData[column] = value;
+}
+
 TreeItem *TreeItem::parentItem()
 {
     return m_parentItem;

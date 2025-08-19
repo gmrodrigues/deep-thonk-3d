@@ -55,15 +55,15 @@ void Engine::setLocale(const std::string& locale) {
     }
 }
 
-std::string Engine::respond(const std::string& userText) {
+deep_thonk::Response Engine::respond(const std::string& userText) {
     if (!m_activePack) {
-        return "I'm sorry, I don't have any rules loaded to respond.";
+        return {"I'm sorry, I don't have any rules loaded to respond.", ""};
     }
 
-    const Rule* bestRule = nullptr;
+    Rule* bestRule = nullptr;
     std::smatch bestMatch;
 
-    for (const auto& rule : m_activePack->rules) {
+    for (auto& rule : m_activePack->rules) {
         std::smatch currentMatch;
         if (std::regex_search(userText, currentMatch, rule.pattern)) {
             if (!bestRule || rule.patternString.length() > bestRule->patternString.length()) {
@@ -74,16 +74,17 @@ std::string Engine::respond(const std::string& userText) {
     }
 
     if (bestRule) {
+        bestRule->hits++;
         std::string captured = bestMatch.size() > 1 ? bestMatch[1].str() : "";
         int choice = rand() % bestRule->outs.size();
         std::string responseTemplate = bestRule->outs[choice].text;
 
         if (responseTemplate.find("{1}") != std::string::npos) {
             std::string reflected = reflect(captured);
-            return std::regex_replace(responseTemplate, std::regex("\\{1\\}"), reflected);
+            return {std::regex_replace(responseTemplate, std::regex("\\{1\\}"), reflected), bestRule->id};
         }
         
-        return responseTemplate;
+        return {responseTemplate, bestRule->id};
     }
 
     return pickNeutralProbe();
@@ -118,16 +119,16 @@ std::string Engine::reflect(const std::string& text) {
     return result;
 }
 
-std::string Engine::pickNeutralProbe() {
-    if (!m_activePack) return "I'm not sure what to say.";
+deep_thonk::Response Engine::pickNeutralProbe() {
+    if (!m_activePack) return {"I'm not sure what to say.", ""};
 
     for (const auto& rule : m_activePack->rules) {
         if (rule.category == "General") {
             int choice = rand() % rule.outs.size();
-            return rule.outs[choice].text;
+            return {rule.outs[choice].text, rule.id};
         }
     }
-    return "Please, tell me more.";
+    return {"Please, tell me more.", ""};
 }
 
 const std::map<std::string, RulePack> &Engine::getRulePacks() const {

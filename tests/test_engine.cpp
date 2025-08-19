@@ -32,7 +32,7 @@ void TestEngine::testResponse()
     QFETCH(QString, input);
     QFETCH(QString, expectedResponse);
 
-    QString actualResponse = QString::fromStdString(m_engine.respond(input.toStdString()));
+    QString actualResponse = QString::fromStdString(m_engine.respond(input.toStdString()).text);
 
     QCOMPARE(actualResponse, expectedResponse);
 }
@@ -55,7 +55,7 @@ void TestEngine::testReflection()
 
     // This is a bit of a hack, as we don't have direct access to the reflect method.
     // We'll rely on a rule that we know will reflect.
-    std::string response = m_engine.respond(("Please reflect: " + input).toStdString());
+    std::string response = m_engine.respond(("Please reflect: " + input).toStdString()).text;
 
     QVERIFY(QString::fromStdString(response).contains(expectedReflection, Qt::CaseInsensitive));
 }
